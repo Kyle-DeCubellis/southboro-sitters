@@ -210,7 +210,7 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { number: '4', label: 'Dedicated helpers' },
+              { number: '2\u20133', label: 'Helpers per job' },
               { number: '20+', label: 'Happy families' },
               { number: '100%', label: 'Parent present' },
               { number: '$12', label: 'Starting rate/hr' },
