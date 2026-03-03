@@ -155,7 +155,7 @@ export default function Home() {
 
           <FadeIn delay={0.2}>
             <p className="text-xl md:text-2xl text-charcoal/60 max-w-2xl mb-10 leading-relaxed">
-              We're four Woodward School 3rd graders who keep your kids entertained with crafts, games, and outdoor fun&mdash;while you stay home and breathe.
+              We're four Woodward School 3rd graders who keep your kids entertained with crafts, games, and outdoor fun{'\u2014'}while you stay home and breathe.
             </p>
           </FadeIn>
 
@@ -178,11 +178,11 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sage font-bold text-lg">{'\u2713'}</span>
-                $12&ndash;$15/hr
+                $12{'\u2013'}$15/hr
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sage font-bold text-lg">{'\u2713'}</span>
-                Ages 2&ndash;7
+                Ages 2{'\u2013'}7
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sage font-bold text-lg">{'\u2713'}</span>
@@ -203,7 +203,7 @@ export default function Home() {
                 Not babysitters. Playmates.
               </h2>
               <p className="text-lg text-charcoal/60 leading-relaxed">
-                We started Southboro Sitters because our parents' friends kept asking us to come play with their kids. Turns out we're really good at it. We bring the crafts, the energy, and the imagination&mdash;you stay home and finally get things done.
+                We started Southboro Sitters because our parents' friends kept asking us to come play with their kids. Turns out we're really good at it. We bring the crafts, the energy, and the imagination{'\u2014'}you stay home and finally get things done.
               </p>
             </div>
           </FadeIn>
@@ -367,7 +367,7 @@ export default function Home() {
                     ))}
                   </div>
                   <p className="text-warm-cream/80 leading-relaxed mb-6 italic">
-                    &ldquo;{t.quote}&rdquo;
+                    {'\u201C'}{t.quote}{'\u201D'}
                   </p>
                   <div>
                     <p className="font-semibold text-warm-cream">{t.parent}</p>
@@ -394,13 +394,13 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-2xl border-2 border-sage/20 p-8 hover:border-sage/40 transition-colors">
-                <h3 className="text-lg font-bold text-charcoal mb-1">1&ndash;2 Kids</h3>
+                <h3 className="text-lg font-bold text-charcoal mb-1">1{'\u2013'}2 Kids</h3>
                 <div className="flex items-baseline gap-1 mb-4">
                   <span className="text-4xl font-bold text-sage">$12</span>
                   <span className="text-charcoal/40">/hour</span>
                 </div>
                 <ul className="space-y-2 text-sm text-charcoal/60">
-                  <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> 2&ndash;3 hour sessions</li>
+                  <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> 2{'\u2013'}3 hour sessions</li>
                   <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> Craft supplies included</li>
                   <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> Weekday & weekend slots</li>
                 </ul>
@@ -413,7 +413,7 @@ export default function Home() {
                   <span className="text-charcoal/40">/hour</span>
                 </div>
                 <ul className="space-y-2 text-sm text-charcoal/60">
-                  <li className="flex items-center gap-2"><span className="text-terra">{'\u2713'}</span> 2&ndash;3 hour sessions</li>
+                  <li className="flex items-center gap-2"><span className="text-terra">{'\u2713'}</span> 2{'\u2013'}3 hour sessions</li>
                   <li className="flex items-center gap-2"><span className="text-terra">{'\u2713'}</span> Extra helper included</li>
                   <li className="flex items-center gap-2"><span className="text-terra">{'\u2713'}</span> Perfect for playdates</li>
                 </ul>
@@ -516,7 +516,7 @@ export default function Home() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-charcoal/50">Session length</span>
-                      <span className="text-charcoal font-medium">2&ndash;3 hours</span>
+                      <span className="text-charcoal font-medium">2{'\u2013'}3 hours</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-charcoal/50">Availability</span>
@@ -524,7 +524,7 @@ export default function Home() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-charcoal/50">Ages served</span>
-                      <span className="text-charcoal font-medium">2&ndash;7 years old</span>
+                      <span className="text-charcoal font-medium">2{'\u2013'}7 years old</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-charcoal/50">Email</span>
