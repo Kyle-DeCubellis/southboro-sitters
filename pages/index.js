@@ -186,7 +186,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sage font-bold text-lg">{'\u2713'}</span>
-                Weekends & afternoons
+                Weekends & after school
               </div>
             </div>
           </FadeIn>
@@ -238,7 +238,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { step: '1', title: 'Book a Time', desc: 'Pick a slot on our Calendly. Weekday afternoons or weekend mornings\u2014whatever works for your family.', icon: '\u{1F4C5}' },
+              { step: '1', title: 'Book a Time', desc: 'Pick a slot on our Calendly. After school (4\u20136pm) or weekend mornings\u2014whatever works for your family.', icon: '\u{1F4C5}' },
               { step: '2', title: 'We Show Up Ready', desc: 'We arrive with craft supplies, game ideas, and a plan. You give us the house rules and we take it from there.', icon: '\u{1F3E0}' },
               { step: '3', title: 'You Relax', desc: 'Work from home, cook dinner, read a book, or just sit in silence for once. We\u2019ve got the kids covered.', icon: '\u2615' },
             ].map((item, i) => (
@@ -402,7 +402,7 @@ export default function Home() {
                 <ul className="space-y-2 text-sm text-charcoal/60">
                   <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> 2{'\u2013'}3 hour sessions</li>
                   <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> Craft supplies included</li>
-                  <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> Weekday & weekend slots</li>
+                  <li className="flex items-center gap-2"><span className="text-sage">{'\u2713'}</span> After school & weekend slots</li>
                 </ul>
               </div>
               <div className="rounded-2xl border-2 border-terra/30 bg-terra/3 p-8 relative">
@@ -520,7 +520,7 @@ export default function Home() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-charcoal/50">Availability</span>
-                      <span className="text-charcoal font-medium">Weekends & weekday afternoons</span>
+                      <span className="text-charcoal font-medium">Weekends & after school (4{'\u2013'}6pm)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-charcoal/50">Ages served</span>
