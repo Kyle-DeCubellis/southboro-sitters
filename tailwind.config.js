@@ -8,14 +8,17 @@ module.exports = {
     extend: {
       colors: {
         'warm-cream': '#FAF7F2',
-        sage: '#A8B8A0',
+        sage: '#5BA5A5',
+        'sage-dark': '#3D8B8B',
+        teal: '#2E8B8B',
         terra: '#C5A583',
         clay: '#B8956A',
-        charcoal: '#3F3F3F',
+        charcoal: '#1A2E3B',
+        'charcoal-light': '#3F4F5A',
       },
       fontFamily: {
-        body: ['Lora', 'serif'],
-        heading: ['Playfair Display', 'serif'],
+        body: ['DM Sans', 'sans-serif'],
+        heading: ['DM Serif Display', 'serif'],
       },
     },
   },
