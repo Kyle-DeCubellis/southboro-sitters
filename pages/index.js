@@ -33,11 +33,11 @@ function FadeIn({ children, className = '', delay = 0 }) {
   )
 }
 
-const team = [
-  { name: 'Ella', emoji: '\u{1F3A8}', specialty: 'Arts & Crafts', desc: 'Can turn a cardboard box into a castle. Loves painting, collages, and slime.' },
-  { name: 'Mia', emoji: '\u{1F3C3}', specialty: 'Games & Sports', desc: 'Tag, relay races, obstacle courses\u2014she keeps everyone moving and laughing.' },
-  { name: 'Riley', emoji: '\u{1F4DA}', specialty: 'Stories & Imagination', desc: 'Builds entire worlds with stuffed animals. Great at reading aloud and make-believe.' },
-  { name: 'Natalie', emoji: '\u{1F3B5}', specialty: 'Music & Dance', desc: 'Freeze dance champion. Brings the energy and always gets kids giggling.' },
+const specialties = [
+  { emoji: '\u{1F3A8}', title: 'Arts & Crafts', desc: 'Painting, collages, slime, and building. We turn cardboard boxes into castles.' },
+  { emoji: '\u{1F3C3}', title: 'Games & Sports', desc: 'Tag, relay races, obstacle courses. We keep everyone moving and laughing.' },
+  { emoji: '\u{1F4DA}', title: 'Stories & Imagination', desc: 'Make-believe worlds, reading aloud, and adventures with stuffed animals.' },
+  { emoji: '\u{1F3B5}', title: 'Music & Dance', desc: 'Freeze dance, sing-alongs, and dance parties that get everyone giggling.' },
 ]
 
 const testimonials = [
@@ -87,7 +87,7 @@ export default function Home() {
     <>
       <Head>
         <title>Southboro Sitters | Mother's Helpers in Southborough, MA</title>
-        <meta name="description" content="Southboro Sitters provides trusted mother's helper services in Southborough, MA. Four experienced helpers keep your kids entertained with crafts, games, and outdoor fun while you're home." />
+        <meta name="description" content="Southboro Sitters provides trusted mother's helper services in Southborough, MA. Eight experienced 3rd-grade helpers keep your kids entertained with crafts, games, and outdoor fun while you're home." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Southboro Sitters | Mother's Helpers in Southborough, MA" />
         <meta property="og:description" content="Trusted, affordable mother's helpers for Southborough families. Crafts, games, outdoor fun\u2014while you stay home and relax." />
@@ -155,7 +155,7 @@ export default function Home() {
 
           <FadeIn delay={0.2}>
             <p className="text-xl md:text-2xl text-charcoal/60 max-w-2xl mb-10 leading-relaxed">
-              We're four Woodward School 3rd graders who keep your kids entertained with crafts, games, and outdoor fun{'\u2014'}while you stay home and breathe.
+              A team of eight Woodward School 3rd graders who keep your kids entertained with crafts, games, and outdoor fun{'\u2014'}while you stay home and breathe.
             </p>
           </FadeIn>
 
@@ -317,29 +317,28 @@ export default function Home() {
           <FadeIn>
             <div className="text-center mb-16">
               <span className="text-sm font-semibold text-sage uppercase tracking-widest">Meet the Team</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-4">Four helpers. Four specialties.</h2>
-              <p className="text-charcoal/50 max-w-xl mx-auto">Each of us brings something different. Together, we can match any kid&apos;s energy and interests.</p>
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-4">Eight helpers. Endless energy.</h2>
+              <p className="text-charcoal/50 max-w-xl mx-auto">Every helper brings something different. With 2{'\u2013'}3 on each job, we match any kid&apos;s energy and interests.</p>
             </div>
           </FadeIn>
 
           <FadeIn delay={0.1}>
             <div className="flex justify-center mb-12">
               <div className="relative rounded-3xl overflow-hidden shadow-xl max-w-lg w-full">
-                <Image src="/images/cofounders.png" alt="Ella, Mia, Riley, and Natalie - the Southboro Sitters team" width={600} height={400} className="w-full h-auto" />
+                <Image src="/images/cofounders.png" alt="The Southboro Sitters team" width={600} height={400} className="w-full h-auto" />
               </div>
             </div>
           </FadeIn>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, i) => (
-              <FadeIn key={member.name} delay={i * 0.1}>
+            {specialties.map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.1}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm border border-sage/10 hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-center group">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-sage/20 to-terra/20 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    {member.emoji}
+                    {item.emoji}
                   </div>
-                  <h3 className="text-xl font-bold text-charcoal mb-1">{member.name}</h3>
-                  <p className="text-sage text-sm font-semibold mb-3">{member.specialty}</p>
-                  <p className="text-charcoal/50 text-sm leading-relaxed">{member.desc}</p>
+                  <h3 className="text-lg font-bold text-charcoal mb-2">{item.title}</h3>
+                  <p className="text-charcoal/50 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -547,7 +546,7 @@ export default function Home() {
                 <Image src="/images/logo.png" alt="Southboro Sitters" width={120} height={40} className="h-8 w-auto brightness-200" />
               </div>
               <p className="text-warm-cream/50 text-sm leading-relaxed max-w-sm">
-                Trusted mother's helper service in Southborough, MA. Four Woodward School 3rd graders keeping kids entertained while parents stay home and relax.
+                Trusted mother's helper service in Southborough, MA. Eight Woodward School 3rd graders keeping kids entertained while parents stay home and relax.
               </p>
             </div>
             <div>
